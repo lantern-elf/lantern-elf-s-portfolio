@@ -1,0 +1,38 @@
+nav{
+    position: fixed;
+    width: 10vh;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    padding: 4px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    height: 100vh;
+}
+
+img{
+    position: fixed;
+    width: 52px;
+    height: 52px;
+}
+
+button{
+    cursor: pointer;
+    border: transparent solid 2px;
+    border-radius: 50%;
+}
+
+.btnImage{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: greenyellow;
+}

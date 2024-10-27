@@ -1,9 +1,15 @@
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Main from './pages/main'
+import NotFound from './pages/NotFound'
 
-function App() {
-  return (
-    <>
-    </>
+const App = () => {
+  return(
+    <Router>
+      <Routes>
+        <Route path='/'element={<Main />} />
+        <Route path='*'element={<NotFound />} />
+      </Routes>
+    </Router>
   )
 }
 
