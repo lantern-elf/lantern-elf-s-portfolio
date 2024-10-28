@@ -1,0 +1,19 @@
+.darkTheme{
+    color: white;
+    background-color: black;
+}
+
+.light_theme{
+    color: black;
+    background-color: ivory;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    height: 10vh;
+}
+
+main{
+    height: 90vh;
+}

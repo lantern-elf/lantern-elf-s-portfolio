@@ -1,11 +1,15 @@
-import Navbar from "../components/Navbar"
+import React from 'react';
+import Navbar from '../components/Navbar';
+import './style.css'
 
 const Main = () =>{
     return(
-        <>
-            <Navbar />
+        <>  
+            <nav>
+                <Navbar />
+            </nav>
             <main>
-
+                
             </main>
         </>
     )

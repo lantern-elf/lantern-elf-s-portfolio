@@ -1,38 +1,60 @@
-nav{
-    position: fixed;
-    width: 10vh;
-    height: 100vh;
+.wrapper{
+    backdrop-filter: blur(32px);
     display: flex;
-    place-items: center;
-    flex-direction: column;
-    padding: 4px;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+    border-bottom: black 1px solid;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; 
 }
 
-ul{
+ul, li{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 32px;
-    height: 100vh;
+    list-style-type: none;
+    background-color: transparent;
 }
 
-img{
-    position: fixed;
-    width: 52px;
-    height: 52px;
+label{
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 500;
 }
 
 button{
+    border: black solid 1px;
+    border-radius: 16px;
+    padding: 4px;
+    width: 96px;
     cursor: pointer;
-    border: transparent solid 2px;
-    border-radius: 50%;
+    font-size: 16px;
+    transition-duration: .3s;
 }
 
-.btnImage{
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    margin: 4px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: greenyellow;
+button:hover{
+    border: greenyellow 1px solid;
+    color: rgb(140, 207, 40);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    gap: 4px;
+    background-color: transparent;
+}
+
+.menu{
+    width: 80%;
+    right: 0;
+    gap: 42px;
+    justify-content: end;
+    padding-inline: 42px;
+    /* padding-right: 20vh; */
 }
