@@ -12,9 +12,9 @@ const Navbar = () => {
             </div>
             <ul className='menu'>
                 <li><button type="button">Home</button></li>
-                <li><button type="button">About</button></li>
                 <li><button type="button">Portfolio</button></li>
                 <li><button type="button">Abilities</button></li>
+                <li><button type="button">About</button></li>
                 <li><button type="button">Social</button></li>
             </ul>
         </div>
