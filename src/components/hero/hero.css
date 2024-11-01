@@ -1,0 +1,17 @@
+@import url("/src/index.css");
+
+.parent{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    height: 92vh;
+}
+
+.headerImg{
+    background-repeat: no-repeat;
+    background-size: 102%;
+    background-position: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 16px;
+}

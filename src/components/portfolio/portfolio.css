@@ -1,0 +1,52 @@
+@import url("/src/index.css");
+
+.portfolio{
+    position: relative;
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.container{
+    height: 512px;
+    width: 512px;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.card{
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.333);
+    overflow: hidden;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.thumbnail{
+    height: 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 145%;
+    background-position: center;
+}
+
+.title{
+    height: 20%;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.titleLabel{
+    position: relative;
+    top: 8px;
+    left: 8px;
+    font-weight: 400;
+    font-size: 32px;
+}

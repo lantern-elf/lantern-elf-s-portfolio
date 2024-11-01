@@ -1,0 +1,70 @@
+@import url("/src/index.css");
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(32px);
+    height: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    flex-flow: nowrap;
+}
+
+.menu {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    justify-content: flex-end;
+    padding-inline: 10px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+button {
+    border: rgb(0, 0, 0) solid 1.5px;
+    border-radius: 16px;
+    padding: 4px;
+    width: 96px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: .3s;
+    background-color: transparent;
+}
+
+button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+/* @media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: flex-start;
+        padding-inline: 0;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+} */
