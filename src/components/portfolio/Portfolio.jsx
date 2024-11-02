@@ -4,26 +4,27 @@ import './portfolio.css';
 const Portfolio = () => {
     return (
         <div className="portfolio">
-            <a href="#">
-                <div className="container card">
-                    <div className="thumbnail" style={{backgroundImage: 'url("/public/banner.png")'}}>
-                        
+            <div className="pageTitle">
+                portfolio
+            </div>
+            <div className="portfolioMenuWrapper">
+                <a href="#">
+                    <div className="container card">
+                        <div className="thumbnail" style={{backgroundImage: 'url("/public/banner.png")'}} />
+                        <div className="title">
+                            <label className="titleLabel" htmlFor="title 2D ARTS">2D ARTS</label>
+                        </div>
                     </div>
-                    <div className="title">
-                        <label className="titleLabel" htmlFor="title 2D ARTS">2D ART</label>
+                </a>
+                <a href="#">
+                    <div className="container card">
+                        <div className="thumbnail codes" style={{backgroundImage: 'url("public/code2.png")'}} />
+                        <div className="title">
+                            <label className="titleLabel" htmlFor="title CODES">CODES</label>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="">
-                <div className="container card">
-                    <div className="thumbnail">
-                        
-                    </div>
-                    <div className="title">
-                    <label className="titleLabel" htmlFor="title CODES">CODES</label>
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     );
 };

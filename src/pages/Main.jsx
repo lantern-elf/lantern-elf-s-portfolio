@@ -6,7 +6,7 @@ import './style.css'
 
 const Main = () =>{
     return(
-        <body>  
+        <>  
             <nav>
                 <Navbar />
             </nav>
@@ -14,7 +14,7 @@ const Main = () =>{
                 <Hero />
                 <Portfolio />
             </main>
-        </body>
+        </>
     )
 }
 

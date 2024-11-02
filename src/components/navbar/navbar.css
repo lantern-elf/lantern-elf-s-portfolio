@@ -31,7 +31,8 @@ button {
     width: 96px;
     cursor: pointer;
     font-size: 16px;
-    transition-duration: .3s;
+    transition: .3s ease;
+    font-family: var(--font-family);
     background-color: transparent;
 }
 
@@ -46,7 +47,7 @@ button:hover {
     align-items: center;
     gap: 4px;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 22px;
 }
 
