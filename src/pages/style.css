@@ -12,6 +12,5 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* place-items: center; */
     gap: 8vh;
 }

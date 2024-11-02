@@ -36,7 +36,12 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    transition: .3s ease-in-out;
 
+}
+
+.container:hover{
+    transform: scale(1.05) rotate(2deg);
 }
 
 .card{
