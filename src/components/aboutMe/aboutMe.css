@@ -1,0 +1,17 @@
+@import url("/src/index.css");
+
+.profileWrapper{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    height: 90%;
+    width: 100%;
+}
+
+.profileCard{
+    height: 512px;
+    width: 1024px;
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    box-shadow: var(--default-shadow-style);
+}

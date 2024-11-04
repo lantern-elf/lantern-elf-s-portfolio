@@ -1,16 +1,21 @@
 nav{
     position: sticky;
     top: 0;
+    width: 100%;
     height: 8vh;
     z-index: 99;
     background-color: #fcfcf223;
     border-bottom: solid .5px rgba(255, 255, 255, 0.538);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main{
     height: fit-content;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
     gap: 8vh;
 }

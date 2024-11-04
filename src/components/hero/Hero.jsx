@@ -3,8 +3,8 @@ import './hero.css'
 
 const Hero = () => {
     return(
-        <div className='parent'>
-            <div className='headerImg' style={{backgroundImage: 'url("public/banner.png")'}} >
+        <div className='pagesWrapper'>
+            <div className='headerImg' style={{backgroundImage: 'url("./banner.png")'}} >
             </div>
         </div>
     )

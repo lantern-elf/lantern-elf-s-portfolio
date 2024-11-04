@@ -1,20 +1,22 @@
 @import url("/src/index.css");
 
 .wrapper {
+    width: 100%;;
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    backdrop-filter: blur(32px);
+    backdrop-filter: blur(16px);
     height: 100%;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    flex-flow: nowrap;
 }
 
 .menu {
     display: flex;
-    width: 80%;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: flex-end;
     padding-inline: 10px;
@@ -42,13 +44,16 @@ button:hover {
 }
 
 .logo {
+    max-width: 20%;
+    position: relative;
+    width: 20%;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 4px;
     text-transform: capitalize;
     font-weight: 600;
     font-size: 22px;
+    letter-spacing: 1px;
 }
 
 /* @media (max-width: 768px) {

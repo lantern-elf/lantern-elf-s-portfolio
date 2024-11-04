@@ -3,8 +3,8 @@ import './portfolio.css';
 
 const Portfolio = () => {
     return (
-        <div className="portfolio">
-            <div className="pageTitle">
+        <div className="pagesWrapper">
+            <div className="pagesTitle">
                 portfolio
             </div>
             <div className="portfolioMenuWrapper">
@@ -12,7 +12,7 @@ const Portfolio = () => {
                     <div className="container card">
                         <div className="thumbnail" style={{backgroundImage: 'url("/public/banner.png")'}} />
                         <div className="title">
-                            <label className="titleLabel" htmlFor="title 2D ARTS">2D ARTS</label>
+                            2D ARTS
                         </div>
                     </div>
                 </a>
@@ -20,7 +20,7 @@ const Portfolio = () => {
                     <div className="container card">
                         <div className="thumbnail codes" style={{backgroundImage: 'url("public/code2.png")'}} />
                         <div className="title">
-                            <label className="titleLabel" htmlFor="title CODES">CODES</label>
+                           CODES
                         </div>
                     </div>
                 </a>

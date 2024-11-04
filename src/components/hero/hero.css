@@ -1,15 +1,8 @@
 @import url("/src/index.css");
 
-.parent{
-    display: flex;
-    justify-content: center;
-    place-items: center;
-    height: 92vh;
-}
-
 .headerImg{
     background-repeat: no-repeat;
-    background-size: 102%;
+    background-size: cover;
     background-position: center;
     width: 95%;
     height: 95%;
