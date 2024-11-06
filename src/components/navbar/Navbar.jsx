@@ -5,7 +5,7 @@ const Navbar = () => {
     return(
         <div className="wrapper">
             <div className='logo'>
-                <img src="public/Emblem.png" alt="" style={{width: "48px", height: "48px"}} />
+                <img src="public/Emblem.png" alt=""/>
                 <label htmlFor="">lantern elf</label>
             </div>
             <ul className='menu'>

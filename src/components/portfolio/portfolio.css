@@ -2,7 +2,7 @@
 
 .portfolioMenuWrapper{
     width: 100%;
-    height: auto;
+    height: 90%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -10,20 +10,31 @@
     align-items: center;
 }
 
-.container{
-    width: 45vw;
-    max-width: 500px;
-    height: 45vw;
-    max-height: 500px;
-    position: relative;
+.content{
     display: flex;
     flex-wrap: wrap;
+    width: 100vmax;
+    justify-content: space-evenly;
+}
+
+.container{
+    width: 30%;
+    min-width: 12em;
+    height: auto;
+    aspect-ratio: 1;
+    position: relative;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    transition: .3s ease-in-out;
-    margin: 20px;
+    transition: 0.3s ease-in-out;
+    margin: 1em;
 
+}
+
+.container a{
+    height: 100%;
+    width: 100%;
 }
 
 .container:hover{
@@ -41,12 +52,8 @@
     height: 90%;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 160%;
+    background-size: cover;
     background-position: center;
-}
-
-.codes{
-    background-position: -52px;
 }
 
 .title{
@@ -57,4 +64,6 @@
     justify-content: center;
     align-items: center;
     font-size: clamp(1rem, 2vw, 2rem);
+    /* font-size: 1rem; */
+    text-transform: uppercase;
 }

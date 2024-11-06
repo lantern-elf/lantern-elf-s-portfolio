@@ -8,22 +8,24 @@ const Portfolio = () => {
                 portfolio
             </div>
             <div className="portfolioMenuWrapper">
-                <a href="#">
+                <div className="content">
                     <div className="container card">
-                        <div className="thumbnail" style={{backgroundImage: 'url("/public/banner.png")'}} />
-                        <div className="title">
-                            2D ARTS
-                        </div>
+                        <a href="#">
+                            <div className="thumbnail" style={{backgroundImage: 'url("/public/banner.png")'}} />
+                            <div className="title">
+                                2d arts
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a href="#">
                     <div className="container card">
-                        <div className="thumbnail codes" style={{backgroundImage: 'url("public/code2.png")'}} />
-                        <div className="title">
-                           CODES
-                        </div>
+                        <a href="#">
+                            <div className="thumbnail" style={{backgroundImage: 'url("public/code2.png")'}} />
+                            <div className="title">
+                                codes
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     );

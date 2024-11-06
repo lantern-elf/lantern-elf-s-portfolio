@@ -7,7 +7,8 @@
   --secondary-color: rgb(244, 233, 255);
   --font-family: "Montserrat", "Raleway", "Poppins", monospace;
   --default-shadow-style: 2px 2px 16px 0px rgba(0, 0, 0, 0.25);
-  --pages-height: 92vh
+  --pages-height: 92vh;
+  --nav-height: 8vh;
 }
 
 *, html {
@@ -34,17 +35,20 @@ a{
   width: 100%;
   height: var(--pages-height);
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
   /* gap: 64px; */
 }
 
 .pagesTitle{
+  height: 10%;
   text-transform: uppercase;
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: 2rem;
   font-weight: 400;
   color: var(--accent-color);
-  letter-spacing: 4px;
+  letter-spacing: .5rem;
+  display: flex;
+  align-items: center;
 }
