@@ -9,7 +9,12 @@ const AboutMe = () => {
             </div>
             <div className="profileWrapper">
                 <div className="profileCard">
-                    
+                    <div className="photo cardContainer">
+                        <div></div>
+                    </div>
+                    <div className="info cardContainer">
+
+                    </div>
                 </div>
             </div>
         </div>

@@ -9,6 +9,8 @@
   --default-shadow-style: 2px 2px 16px 0px rgba(0, 0, 0, 0.25);
   --pages-height: 92vh;
   --nav-height: 8vh;
+  --default-border-radius: 0.5rem;
+  --default-transition: .3s ease-in-out;
 }
 
 *, html {

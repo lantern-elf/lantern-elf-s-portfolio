@@ -4,15 +4,18 @@ import './navbar.css'
 const Navbar = () => {
     return(
         <div className="wrapper">
-            <div className='logo'>
+            <div className='section logo'>
                 <img src="public/Emblem.png" alt=""/>
                 <label htmlFor="">lantern elf</label>
             </div>
-            <ul className='menu'>
-                <a href="#"><li><button type="button">Home</button></li></a>
-                <a href="#"><li><button type="button">Portfolio</button></li></a>
-                <a href="#"><li><button type="button">About</button></li></a>
-                <a href="#"><li><button type="button">Social</button></li></a>
+            <ul className='section menu'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Social</a></li>
+            </ul>
+            <ul className='section option'>
+
             </ul>
         </div>
     )

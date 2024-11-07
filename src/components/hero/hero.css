@@ -6,6 +6,6 @@
     background-position: center;
     width: 95%;
     height: 95%;
-    border-radius: 16px;
+    border-radius: var(--default-border-radius);
     box-shadow: var(--default-shadow-style);
 }
