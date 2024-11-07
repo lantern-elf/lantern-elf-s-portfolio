@@ -19,7 +19,7 @@
   color: rgb(0, 0, 0);
   font-family: var(--font-family);
   scroll-behavior: smooth;
-  /* border: red 1px solid; */
+  /* border: red 0.5px solid; */
 }
 
 body{
@@ -37,7 +37,7 @@ a{
   width: 100%;
   height: var(--pages-height);
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: column;
   /* justify-content: space-evenly; */
   align-items: center;

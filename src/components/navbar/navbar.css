@@ -18,11 +18,10 @@
 }
 
 .section{
-    width: 33%;
+    width: 32%;
     height: 100%;
 
     display: flex;
-    flex-wrap: wrap;
 }
 
 .logo {
@@ -44,33 +43,59 @@
 .menu {
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    /* flex-wrap: wrap; */
 
     font-weight: 500;
 }
 
+.menu li {
+    list-style: none;
+    height: 90%;
+    width: 24%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: var(--default-border-radius);
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.menu li:hover a{
+    color: var(--accent-color);
+}
+
+.menu li:hover a::before {
+    width: 100%;
+    left: 0;
+}
+
 .menu a{
-    width: 5rem;
+    position: relative;
+    /* width: 5rem; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-block: 0.5rem; */
     
     border-radius: var(--default-border-radius);
 
     transition: var(--default-transision);
 }
 
-.menu li {
-    list-style: none;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .option{
     justify-content: end;
     align-items: center;
+
+    /* background-color: rgb(216, 151, 151); */
 }

@@ -27,7 +27,7 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    transition: var(--default-transision);
+    transition: var(--default-transition);
     margin: 1em;
 
 }
