@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --accent-color: rgb(166, 255, 0);
+  --secondary-color: rgb(244, 233, 255);
+  --font-family: "Montserrat", "Raleway", "Poppins", monospace;
+  --default-shadow-style: 2px 2px 16px 0px rgba(0, 0, 0, 0.25);
+  --pages-height: 92vh;
+  --nav-height: 8vh;
+  --default-border-radius: 0.5rem;
+  --default-transition: .3s ease-in-out;
+}
+
+*, html {
+  padding:  0;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  /* border: red 0.5px solid; */
+}
+
+body{
+  background-color: #fcfcf7;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+.pagesWrapper{
+  position: relative;
+  width: 100%;
+  height: var(--pages-height);
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  /* gap: 64px; */
+}
+
+.pagesTitle{
+  height: 10%;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--accent-color);
+  letter-spacing: .5rem;
+  display: flex;
+  align-items: center;
+}

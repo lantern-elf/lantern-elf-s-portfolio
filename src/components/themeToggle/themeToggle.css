@@ -1,0 +1,16 @@
+.iconButton {
+    display: flex;
+    align-items: center;
+}
+
+.themeIcon {
+    font-size: 1.5rem;
+}
+
+.moonIcon {
+    color: #fcfcf7 !important;;
+}
+
+.sunIcon {
+    color: black !important;;
+}
