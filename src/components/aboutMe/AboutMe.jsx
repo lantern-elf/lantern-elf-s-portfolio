@@ -1,9 +1,9 @@
 import React from "react";
 import './aboutMe.css'
 
-const AboutMe = () => {
+const AboutMe = React.forwardRef((props, ref) => {
     return(
-        <div className="pagesWrapper">
+        <div className="pagesWrapper" ref={ref}>
             <div className="pagesTitle">
                 about me
             </div>
@@ -19,6 +19,6 @@ const AboutMe = () => {
             </div>
         </div>
     )
-}
+})
 
 export default AboutMe

@@ -1,24 +1,35 @@
 import React from 'react';
 import ThemeToggle from '../themeToggle/ThemeToggle';
+import Hamburger from '../hamburger/Hamburger';
 import './navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ homeRef, portfolioRef, aboutRef, handleRef}) => {
     return(
         <div className="wrapper">
             <div className='section logo'>
-                <img src="public/Emblem.png" alt=""/>
+                <img src="./images/Emblem.png" alt=""/>
                 <label htmlFor="">lantern elf</label>
             </div>
             <ul className='section menu'>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Social</a></li>
+                <li onClick={() => handerRef(homeRef)}>
+                    <a href='#'>Home</a>
+                </li>
+                <li onClick={() => handleRef(portfolioRef)}>
+                    <a>Portfolio</a>
+                </li>
+                <li onClick={() => handleRef(aboutRef)}>
+                    <a>About</a>
+                </li>
+                <li>
+                    <a>Social</a>
+                </li>
             </ul>
             <ul className='section option'>
                 <ThemeToggle />
+                <Hamburger />
             </ul>
         </div>
     )
 }
+
 export default Navbar

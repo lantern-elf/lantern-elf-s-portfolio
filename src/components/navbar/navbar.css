@@ -27,17 +27,19 @@
 .logo {
     justify-content: start;
     align-items: center;
+    padding-left: 0.5em;
+    gap: 1em;
 }
 
 .logo img{
-    width: 3.5em;
+    width: 3em;
     height: auto;
 }
 
 .logo label{
     text-transform: capitalize;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 .menu {
@@ -67,12 +69,8 @@
     height: 1px;
     bottom: 0;
     left: 50%;
-    background-color: var(--accent-color);
+    background-color: black;
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
-}
-
-.menu li:hover a{
-    color: var(--accent-color);
 }
 
 .menu li:hover a::before {
@@ -92,9 +90,10 @@
     transition: var(--default-transision);
 }
 
-
 .option{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    padding-right: 0.5em;
+    gap: 1em;
 }

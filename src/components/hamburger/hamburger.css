@@ -1,0 +1,8 @@
+@import url("/src/index.css");
+
+
+.hamburgerIcon{
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 400;
+}

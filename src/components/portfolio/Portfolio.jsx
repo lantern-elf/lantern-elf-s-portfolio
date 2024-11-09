@@ -1,9 +1,9 @@
 import React from "react";
 import './portfolio.css';
 
-const Portfolio = () => {
+const Portfolio = React.forwardRef((props, ref) => {
     return (
-        <div className="pagesWrapper">
+        <div className="pagesWrapper"  ref={ref}>
             <div className="pagesTitle">
                 portfolio
             </div>
@@ -11,7 +11,7 @@ const Portfolio = () => {
                 <div className="content">
                     <div className="container card">
                         <a href="#">
-                            <div className="thumbnail" style={{backgroundImage: 'url("/public/banner.png")'}} />
+                            <div className="thumbnail" style={{backgroundImage: 'url("./images/banner.png")'}} />
                             <div className="title">
                                 2d arts
                             </div>
@@ -19,7 +19,7 @@ const Portfolio = () => {
                     </div>
                     <div className="container card">
                         <a href="#">
-                            <div className="thumbnail" style={{backgroundImage: 'url("public/code2.png")'}} />
+                            <div className="thumbnail" style={{backgroundImage: 'url("./images/code2.png")'}} />
                             <div className="title">
                                 codes
                             </div>
@@ -29,6 +29,6 @@ const Portfolio = () => {
             </div>
         </div>
     );
-};
+})
 
 export default Portfolio;

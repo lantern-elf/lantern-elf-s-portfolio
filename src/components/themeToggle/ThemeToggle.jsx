@@ -5,7 +5,7 @@ import { useState } from "react";
 import './themeToggle.css'
 
 const ThemeToggle = () => {
-    const [getTheme, setTheme] = useState(true);
+    const [getTheme, setTheme] = useState(false);
 
     const changeTheme = () => {
         setTheme(prevTheme => !prevTheme);
@@ -16,10 +16,10 @@ const ThemeToggle = () => {
     }
 
     return(
-        <label htmlFor="theme-toggle" className="iconButton" onClick={changeTheme}>
+        <label htmlFor="theme-toggle" className={`iconButton ${getTheme ? 'lightIconButton' : 'darkIconButton' }`} onClick={changeTheme}>
             <FontAwesomeIcon
                 icon={getTheme ? faMoon : faSun}
-                className={`themeIcon ${getTheme ? 'moonIcon' : 'sunIcon'}`}
+                className={`themeIcon ${getTheme ? 'sunIcon' : 'moonIcon' }`}
             />
         </label>
     )
