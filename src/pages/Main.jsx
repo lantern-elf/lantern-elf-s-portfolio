@@ -13,10 +13,10 @@ const Main = () => {
 
     const handleRef = (pagesToScroll) => {
         if (pagesToScroll.current) {
-            const scrollPosition = pagesToScroll.current.offsetTop + -55;
-            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+            const scrollPosition = pagesToScroll.current.offsetTop + -55.5;
+            window.scrollTo({ top: scrollPosition });
         }
-    };
+    }
 
     return(
         <>  

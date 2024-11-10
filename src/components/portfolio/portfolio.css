@@ -59,7 +59,7 @@
 .title{
     height: 10%;
     width: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;

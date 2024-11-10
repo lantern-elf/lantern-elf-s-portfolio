@@ -25,10 +25,15 @@
 }
 
 .logo {
+    padding-left: 0.5em;
+}
+
+.logo a{
+    display: flex;
     justify-content: start;
     align-items: center;
-    padding-left: 0.5em;
-    gap: 1em;
+    width: 100%;
+    height: 100%;
 }
 
 .logo img{
@@ -37,9 +42,10 @@
 }
 
 .logo label{
+    cursor: pointer;
     text-transform: capitalize;
     font-weight: 500;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 .menu {
@@ -69,7 +75,7 @@
     height: 1px;
     bottom: 0;
     left: 50%;
-    background-color: black;
+    background-color: var(--text-color);
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
@@ -79,6 +85,7 @@
 }
 
 .menu a{
+    font-weight: 500;
     position: relative;
     /* width: 5rem; */
     display: flex;

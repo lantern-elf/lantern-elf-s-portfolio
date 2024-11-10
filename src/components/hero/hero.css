@@ -4,8 +4,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 95%;
-    height: 95%;
+    width: 99%;
+    height: 99%;
     border-radius: var(--default-border-radius);
     box-shadow: var(--default-shadow-style);
 }

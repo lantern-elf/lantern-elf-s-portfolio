@@ -2,6 +2,7 @@
 
 
 .hamburgerIcon{
+    display: none;
     cursor: pointer;
     font-size: 2rem;
     font-weight: 400;

@@ -18,12 +18,51 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
 }
 
 .cardContainer{
-    width: 100%;
+    position: relative;
     height: 100%;
 }
+
+.photo{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    width: calc(100% - photo);
+}
+
+.photoImg{
+    width: 16em;
+    height: 16em;
+    margin: 2em;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.photoImg::before{
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    right: -16px;
+    bottom: -16px;
+    border-radius: 50%;
+    border: var(--text-color) 2px dashed;
+    animation: rotate 20s linear infinite;
+}@keyframes rotate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }

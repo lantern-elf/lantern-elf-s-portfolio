@@ -7,12 +7,14 @@ const Navbar = ({ homeRef, portfolioRef, aboutRef, handleRef}) => {
     return(
         <div className="wrapper">
             <div className='section logo'>
-                <img src="./images/Emblem.png" alt=""/>
-                <label htmlFor="">lantern elf</label>
+                <a href="">
+                    <img src="./images/Emblem.png" alt=""/>
+                    <label htmlFor="">lantern elf</label>
+                </a>
             </div>
             <ul className='section menu'>
-                <li onClick={() => handerRef(homeRef)}>
-                    <a href='#'>Home</a>
+                <li onClick={() => handleRef(homeRef)}>
+                    <a>Home</a>
                 </li>
                 <li onClick={() => handleRef(portfolioRef)}>
                     <a>Portfolio</a>
