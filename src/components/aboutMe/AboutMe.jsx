@@ -26,7 +26,7 @@ const AboutMe = React.forwardRef((props, ref) => {
                         </div>
                         <div className="interest">
                             <a href="" download>
-                                <button className="">Download Full</button>
+                                <button className="download" disabled>Download Full</button>
                             </a>
                         </div>
                     </div>

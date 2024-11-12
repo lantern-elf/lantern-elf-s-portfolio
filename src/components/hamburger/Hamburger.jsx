@@ -1,13 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import './hamburger.css'
 
-const Hamburger = () => {
+const Hamburger = ({showFull, hamburgerState}) => {
     return(
-        <>
-            <FontAwesomeIcon icon={faBars} className='hamburgerIcon' />
-        </>
+        <FontAwesomeIcon icon={hamburgerState ? faX : faBars} className='hamburgerIcon' onClick={() => showFull()} />
     )
 }
 

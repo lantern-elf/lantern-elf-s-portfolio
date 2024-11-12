@@ -47,13 +47,16 @@ label{
 
 button{
   border-radius: var(--default-border-radius);
-  padding: 1em 1.5em;
+  padding: .8em .8em;
   border: dashed var(--text-color) 1px;
   transition: var(--default-transition);
-  background-color: var(--accent-color);
   cursor: pointer;
   font-size: 1em;
   font-weight: 500;
+}
+
+button:disabled{
+  background-color:#9ee62a65;
 }
 
 .pagesTitle{

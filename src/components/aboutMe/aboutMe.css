@@ -14,7 +14,6 @@
     background-color: var(--primary-color);
     border: var(--default-border);
     border-radius: var(--default-border-radius);
-    box-shadow: var(--default-shadow-style);
 
     display: flex;
     flex-wrap: wrap;
@@ -113,10 +112,27 @@
 }
 
 .info .interest{
+    position: relative;
     height: 20%;
     width: 100%;
     display: flex;
     align-items: center;
+}
+
+.info .interest .download:disabled::before {
+    content: "Not available yet!";
+    position: absolute;
+    left: 128px;
+    top: 0px;
+    background-color: white;
+    padding: 4px;
+    border-radius: 8px;
+    display: none;
+    transition: var(--default-transition);
+}
+
+.info .interest .download:disabled:hover::before {
+    display: flex;
 }
 
 /* @media (max-width: 768px) {

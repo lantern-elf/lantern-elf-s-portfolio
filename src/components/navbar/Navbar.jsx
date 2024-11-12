@@ -1,9 +1,34 @@
 import React from 'react';
-import ThemeToggle from '../themeToggle/ThemeToggle';
+import { useState } from 'react';
+// import ThemeToggle from '../themeToggle/ThemeToggle';
 import Hamburger from '../hamburger/Hamburger';
 import './navbar.css'
 
 const Navbar = ({ homeRef, portfolioRef, aboutRef, handleRef}) => {
+    const [getHamburger, setHamburger] = useState(false)
+    const showFull = () =>{
+        setHamburger(prevHamburger => !prevHamburger)
+    }
+
+    const menuList = [
+        {
+            name: 'home',
+            ref: homeRef
+        },
+        {
+            name: 'about',
+            ref: aboutRef
+        },
+        {
+            name: 'portfolio',
+            ref: portfolioRef
+        },
+        {
+            name: 'social',
+            ref: null 
+        }
+    ]
+
     return(
         <div className="wrapper">
             <div className='section logo'>
@@ -13,25 +38,25 @@ const Navbar = ({ homeRef, portfolioRef, aboutRef, handleRef}) => {
                 </a>
             </div>
             <ul className='section menu'>
-                <li onClick={() => handleRef(homeRef)}>
-                    <a>Home</a>
-                </li>
-                <li onClick={() => handleRef(portfolioRef)}>
-                    <a>Portfolio</a>
-                </li>
+                {   
+                    menuList.map((item, index) => (
+                        <li key={index} onClick={() => item.ref && handleRef(item.ref)} className={`menuItem ${getHamburger ? 'slide-in' : 'slide-out'}`}>
+                            <a>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</a>
+                        </li>
+                    ))
+                }
                 <li>
-                    <a>Abilities</a>
+                    <Hamburger showFull={showFull} hamburgerState={getHamburger}/>
                 </li>
-                <li onClick={() => handleRef(aboutRef)}>
-                    <a>About</a>
-                </li>
-                <li>
-                    <a>Social</a>
-                </li>
-            </ul>
-            <ul className='section option'>
-                <ThemeToggle />
-                <Hamburger />
+                <ul className={`hamburgerMenu ${getHamburger ? 'slide-in' : 'slide-out'}`}>
+                    {
+                        menuList.map((item, index) => (
+                            <li key={index} onClick={() => { item.ref && handleRef(item.ref); showFull(); }}>
+                                <a>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</a>
+                            </li>
+                        ))
+                    }
+                </ul>
             </ul>
         </div>
     )

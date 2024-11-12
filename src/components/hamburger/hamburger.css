@@ -2,8 +2,17 @@
 
 
 .hamburgerIcon{
-    display: none;
+    /* display: none; */
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    transition: var(--default-transition);
+    padding: 0.3rem;
+    z-index: 1;
+}
+
+.hamburgerIcon:hover{
+    background-color: #00000038;
 }

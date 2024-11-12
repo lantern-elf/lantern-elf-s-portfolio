@@ -25,8 +25,8 @@ const Main = () => {
             </nav>
             <main>
                 <Hero ref={homeRef} />
-                <Portfolio ref={portfolioRef} />
                 <AboutMe ref={aboutRef} />
+                <Portfolio ref={portfolioRef} />
             </main>
         </>
     )
