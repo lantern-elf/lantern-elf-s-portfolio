@@ -19,6 +19,9 @@ const Navbar = ({ homeRef, portfolioRef, aboutRef, handleRef}) => {
                 <li onClick={() => handleRef(portfolioRef)}>
                     <a>Portfolio</a>
                 </li>
+                <li>
+                    <a>Abilities</a>
+                </li>
                 <li onClick={() => handleRef(aboutRef)}>
                     <a>About</a>
                 </li>

@@ -10,17 +10,16 @@
 
 .profileCard{
     width: 70%;
-    height: 80%;
+    height: 70%;
     background-color: var(--primary-color);
     border-radius: var(--default-border-radius);
     box-shadow: var(--default-shadow-style);
 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 4%;
     align-items: center;
-    overflow: hidden;
+    padding: 2%;
 }
 
 .cardContainer{
@@ -28,41 +27,124 @@
     height: 100%;
 }
 
-.photo{
-    width: 35%;
-    height: 100%;
+.photo {
+    width: 30%;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-.info{
-    width: calc(100% - photo);
-}
-
-.photoImg{
-    width: 16em;
-    height: 16em;
-    margin: 2em;
-    background-size: cover;
-    border-radius: 50%;
+    align-items: center;
     position: relative;
 }
 
-.photoImg::before{
-    content: '';
+.photo::before {
+    content: "";
     position: absolute;
-    top: -16px;
-    left: -16px;
-    right: -16px;
-    bottom: -16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%; 
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     border: var(--text-color) 2px dashed;
-    animation: rotate 20s linear infinite;
-}@keyframes rotate {
-    0%{
-      transform: rotate(0deg);
+}
+
+.photoImg {
+    position: relative;
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4%;
+    width: 65%;
+    background-color: transparent;
+}
+
+.info .title{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: start;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.info .name{
+    width: 100%;
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    /* align-items: start;
+    justify-content: start; */
+}
+
+.info .headline{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.info .contentsInfo{
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: 300;
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.info .interact{
+    height: 20%;
+    width: 100%;
+}
+
+/* @media (max-width: 768px) {
+    .profileCard {
+        flex-direction: column;
+        padding: 1.5em;
+        gap: 1.5em;
     }
-    100%{
-      transform: rotate(360deg);
+
+    .photo {
+        width: 100%;
     }
-  }
+
+    .info {
+        width: 100%;
+    }
+
+    .photoImg {
+        width: 12em;
+        height: 12em;
+    }
+
+    .photoImg::before {
+        top: -6px;
+        left: -6px;
+        right: -6px;
+        bottom: -6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photoImg {
+        width: 10em;
+        height: 10em;
+    }
+
+    .photoImg::before {
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+    }
+} */

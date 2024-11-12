@@ -18,13 +18,14 @@
 }
 
 .section{
-    width: 32%;
+    /* width: 32%; */
     height: 100%;
 
     display: flex;
 }
 
 .logo {
+    width: 25%;
     padding-left: 0.5em;
 }
 
@@ -49,7 +50,8 @@
 }
 
 .menu {
-    justify-content: space-between;
+    width: 40%;
+    justify-content: space-evenly;
     align-items: center;
     /* flex-wrap: wrap; */
 
@@ -91,13 +93,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    border-radius: var(--default-border-radius);
 
     transition: var(--default-transision);
 }
 
 .option{
+    width: 25%;
     display: flex;
     justify-content: end;
     align-items: center;
