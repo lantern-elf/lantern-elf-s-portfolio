@@ -1,7 +1,7 @@
 const HelloWorld = () => {
     return(
         <>
-            <h1>Hello World</h1> 
+            <h1 className="notFound">Hello, World!</h1> 
         </>
     )
 }

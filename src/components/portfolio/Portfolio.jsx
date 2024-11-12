@@ -8,21 +8,21 @@ const Portfolio = React.forwardRef((props, ref) => {
                 portfolio
             </div>
             <div className="portfolioMenuWrapper">
-                <div className="content">
-                    <div className="container card">
+                <div className="container">
+                    <div className="card item">
                         <a href="#">
-                            <div className="thumbnail" style={{backgroundImage: 'url("./images/banner.png")'}} />
-                            <div className="title">
+                            <img src="./images/banner.png" alt="" />
+                            <label className="title content">
                                 2d arts
-                            </div>
+                            </label>
                         </a>
                     </div>
-                    <div className="container card">
+                    <div className="card item">
                         <a href="#">
-                            <div className="thumbnail" style={{backgroundImage: 'url("./images/code2.png")'}} />
-                            <div className="title">
+                            <img src="./images/code.png" alt="" />
+                            <label className="title content">
                                 codes
-                            </div>
+                            </label>
                         </a>
                     </div>
                 </div>

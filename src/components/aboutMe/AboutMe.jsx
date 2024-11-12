@@ -17,13 +17,17 @@ const AboutMe = React.forwardRef((props, ref) => {
                             <label className="name">lantern elf</label>
                             <label className="headline">-2D Artist | Programmer-</label>
                         </label>
-                        <label className="contentsInfo">
-                            Greetings. I am Lantern, a 2D Artist and programmer, based on Indonesia. 
-                            I specialized in art and coding. My expertise includes illustrations, concept art, 
-                            front-end website development, and game development.
-                        </label>
-                        <div className="interact">
-
+                        <div className="contentsInfo">
+                            <p>
+                                Greetings. I am Lantern, a <i>2D Artist</i> and <i>Programmer</i>, based on Indonesia. 
+                                I specialized in art and coding. My expertise includes illustration, concept art, 
+                                front-end website development, and game development.
+                            </p>
+                        </div>
+                        <div className="interest">
+                            <a href="" download>
+                                <button className="">Download Full</button>
+                            </a>
                         </div>
                     </div>
                 </div>
