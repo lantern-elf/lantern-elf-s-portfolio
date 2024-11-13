@@ -11,7 +11,7 @@ const Portfolio = React.forwardRef((props, ref) => {
                 <div className="container">
                     <div className="card item">
                         <a href="#">
-                            <img src="./images/banner.png" alt="" />
+                            <img src="./src/assets/images/banner.png" alt="" />
                             <label>
                                 2d arts
                             </label>
@@ -19,7 +19,7 @@ const Portfolio = React.forwardRef((props, ref) => {
                     </div>
                     <div className="card item">
                         <a href="#">
-                            <img src="./images/code.png" alt="" />
+                            <img src="./src/assets/images/code.png" alt="" />
                             <label>
                                 codes
                             </label>

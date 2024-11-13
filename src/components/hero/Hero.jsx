@@ -4,7 +4,7 @@ import './hero.css'
 const Hero = React.forwardRef((props, ref) => {
     return(
         <div className='pagesWrapper' ref={ref}>
-            <div className='headerImg' style={{backgroundImage: 'url("./images/banner.png")'}} />
+            <div className='headerImg' style={{backgroundImage: 'url("./src/assets/images/banner.png")'}} />
         </div>
     )
 })

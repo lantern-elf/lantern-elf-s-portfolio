@@ -10,7 +10,9 @@ const AboutMe = React.forwardRef((props, ref) => {
             <div className="profileWrapper">
                 <div className="profileCard">
                     <div className="photo cardContainer">
-                        <img className="photoImg" src="./images/profile_picture.png" href="#" />   
+                        <div class="photoImg">
+                            <img src="./src/assets/images/profile_picture.png" alt="Image" />
+                        </div>
                     </div>
                     <div className="info cardContainer">
                         <label className="title">
