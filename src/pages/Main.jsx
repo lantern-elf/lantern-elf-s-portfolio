@@ -25,7 +25,7 @@ const Main = () => {
         // Set a timer to remove loading screen after 2 seconds
         const timer = setTimeout(() => {
             setLoading(false); // Set loading to false after delay
-        }, 2000);
+        }, 4000);
 
         return () => clearTimeout(timer); // Clean up the timer on component unmount
     }, []);
