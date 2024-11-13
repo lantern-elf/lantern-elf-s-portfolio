@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Hamburger from '../hamburger/Hamburger';
 import './navbar.css'
 
-const Navbar = ({ homeRef, portfolioRef, aboutRef, handleRef}) => {
+const Navbar = ({ homeRef, portfolioRef, aboutRef, socialRef, handleRef}) => {
     const [getHamburger, setHamburger] = useState(false)
     const showFull = () =>{
         setHamburger(prevHamburger => !prevHamburger)
@@ -25,7 +25,7 @@ const Navbar = ({ homeRef, portfolioRef, aboutRef, handleRef}) => {
         },
         {
             name: 'social',
-            ref: null 
+            ref:  socialRef
         }
     ]
 
