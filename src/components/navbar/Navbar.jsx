@@ -6,28 +6,42 @@ import './navbar.css'
 
 const Navbar = ({ homeRef, portfolioRef, aboutRef, socialRef, handleRef}) => {
     const [getHamburger, setHamburger] = useState(false)
-    const showFull = () =>{
-        setHamburger(prevHamburger => !prevHamburger)
-    }
-
-    const menuList = [
+    const [menuList, setMenuList] = useState([
         {
             name: 'home',
-            ref: homeRef
+            ref: homeRef,
+            state: false
         },
         {
             name: 'about',
-            ref: aboutRef
+            ref: aboutRef,
+            state: false
         },
         {
             name: 'portfolio',
-            ref: portfolioRef
+            ref: portfolioRef,
+            state: false
         },
         {
             name: 'social',
-            ref:  socialRef
+            ref: socialRef,
+            state: false
         }
-    ]
+    ])
+
+    
+    const showFull = () => {
+        setHamburger(prevHamburger => !prevHamburger)
+    }
+
+    const toggleMenuState = (index) => {
+        setMenuList(prevMenuList =>
+            prevMenuList.map((item, i) => ({
+                ...item,
+                state: i === index
+            }))
+        );
+    };
 
     return(
         <div className="wrapper">
@@ -40,7 +54,13 @@ const Navbar = ({ homeRef, portfolioRef, aboutRef, socialRef, handleRef}) => {
             <ul className='section menu'>
                 {   
                     menuList.map((item, index) => (
-                        <li key={index} onClick={() => item.ref && handleRef(item.ref)} className={`menuItem ${getHamburger ? 'slide-in' : 'slide-out'}`}>
+                        <li key={index} 
+                            onClick={() => {
+                                item.ref && handleRef(item.ref);  
+                                toggleMenuState(index);
+                            }} 
+                            className={`menuItem ${getHamburger ? 'slide-in' : 'slide-out'}`}
+                        >
                             <a>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</a>
                         </li>
                     ))
@@ -51,7 +71,7 @@ const Navbar = ({ homeRef, portfolioRef, aboutRef, socialRef, handleRef}) => {
                 <ul className={`hamburgerMenu ${getHamburger ? 'slide-in' : 'slide-out'}`}>
                     {
                         menuList.map((item, index) => (
-                            <li key={index} onClick={() => { item.ref && handleRef(item.ref); showFull(); }}>
+                            <li key={index} onClick={() => { item.ref && handleRef(item.ref); showFull();}}>
                                 <a>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</a>
                             </li>
                         ))
