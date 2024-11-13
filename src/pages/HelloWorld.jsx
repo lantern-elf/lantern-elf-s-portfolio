@@ -1,9 +1,14 @@
+import { Helmet } from 'react-helmet';
+
 const HelloWorld = () => {
-    return(
+    return (
         <>
-            <h1 className="notFound">Hello, World!</h1> 
+            <Helmet>
+                <title>Lantern Elf | Hello, World!</title>
+            </Helmet>
+            <h1 className="notFound">Hello, World!</h1>
         </>
-    )
+    );
 }
 
-export default HelloWorld
+export default HelloWorld;
