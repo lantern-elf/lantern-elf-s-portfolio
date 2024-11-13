@@ -1,4 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import Navbar from '../components/navbar/Navbar';
 import Hero from '../components/hero/Hero';
 import AboutMe from '../components/aboutMe/AboutMe';
@@ -22,18 +24,17 @@ const Main = () => {
     }
 
     useEffect(() => {
-        // Set a timer to remove loading screen after 2 seconds
         const timer = setTimeout(() => {
-            setLoading(false); // Set loading to false after delay
+            setLoading(false); 
         }, 4000);
 
-        return () => clearTimeout(timer); // Clean up the timer on component unmount
+        return () => clearTimeout(timer);
     }, []);
 
     if (loading) {
         return (
             <div className="loadingScreen">
-                <h1>Loading...</h1>
+                <FontAwesomeIcon icon={faSpinner} spinPulse />
             </div>
         );
     }
