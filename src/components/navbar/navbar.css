@@ -172,9 +172,18 @@
     cursor: pointer;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
+    margin: 0 1%;
 }
 
-@media (max-width: 768px) {
+.hamburgerMenu li a{
+    color: blueviolet !important;
+}
+
+.hamburgerMenu li a::before{
+    background-color: blueviolet;
+}
+
+@media (max-width: 767px) {
     .menuItem {
         display: none !important;
     }

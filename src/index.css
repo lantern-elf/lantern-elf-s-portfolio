@@ -6,7 +6,7 @@
   --background-color: #F3EDF5;
   --primary-color: #A6CC84;
   --accent-color: #9EE62A;
-  --text-color: #28231c;
+  --text-color: #1e1a13;
   --default-shadow-style: 2% 2% 8% 0 rgba(0, 0, 0, 0.25);
   --font-family: "Montserrat";
   --pages-height: 92vh;
@@ -27,7 +27,7 @@
   color: var(--text-color);
   font-family: var(--font-family);
   scroll-behavior: smooth;
-  /* border: red 0.1px solid; */
+  /* border: red 0.1px dashed; */
 }
 
 body{
@@ -62,7 +62,7 @@ button:disabled{
 .pagesTitle{
   height: 10%;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size:3vmax;
   font-weight: 400;
   color: var(--accent-color);
   letter-spacing: .5rem;

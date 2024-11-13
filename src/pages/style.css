@@ -6,7 +6,7 @@ nav{
     width: 100vw;
     height: var(--nav-height);
     z-index: 99;
-    background-color: rgba(240, 248, 255, 0.171);
+    background-color: rgba(240, 248, 255, 0.122);
     border-bottom: solid .5px rgba(255, 255, 255, 0.76);
 }
 
