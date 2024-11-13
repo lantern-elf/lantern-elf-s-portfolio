@@ -11,16 +11,31 @@ const Main = () => {
     const aboutRef = useRef(null)
     const portfolioRef = useRef(null)
     const socialRef = useRef(null)
-
-    // useEffect(() => {
-    //     alert("Welcome")
-    // }, [])
+    
+    const [loading, setLoading] = useState(true); // Define loading state here
 
     const handleRef = (pagesToScroll) => {
         if (pagesToScroll.current) {
             const scrollPosition = pagesToScroll.current.offsetTop + -55.5;
             window.scrollTo({ top: scrollPosition });
         }
+    }
+
+    useEffect(() => {
+        // Set a timer to remove loading screen after 2 seconds
+        const timer = setTimeout(() => {
+            setLoading(false); // Set loading to false after delay
+        }, 2000);
+
+        return () => clearTimeout(timer); // Clean up the timer on component unmount
+    }, []);
+
+    if (loading) {
+        return (
+            <div className="loadingScreen">
+                <h1>Loading...</h1>
+            </div>
+        );
     }
 
     return(
