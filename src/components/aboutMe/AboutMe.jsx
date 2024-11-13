@@ -11,7 +11,7 @@ const AboutMe = React.forwardRef((props, ref) => {
                 <div className="profileCard">
                     <div className="photo cardContainer">
                         <div class="photoImg">
-                            <img src="./src/assets/images/profile_picture.png" alt="Image" />
+                            <img src="./images/profile_picture.png" alt="Image" />
                         </div>
                     </div>
                     <div className="info cardContainer">
