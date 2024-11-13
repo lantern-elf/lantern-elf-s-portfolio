@@ -4,7 +4,7 @@ import './social.css'
 const Social = React.forwardRef((props, ref) => {
     return(
         <div className="pagesWrapper" ref={ref}>
-
+            
         </div>
     )
 })

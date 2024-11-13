@@ -3,7 +3,7 @@
 nav{
     position: sticky;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: var(--nav-height);
     z-index: 99;
     background-color: rgba(240, 248, 255, 0.122);
@@ -11,7 +11,7 @@ nav{
 }
 
 main{
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;

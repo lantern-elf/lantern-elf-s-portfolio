@@ -4,7 +4,7 @@
 .hamburgerIcon{
     /* display: none; */
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 400;
     border-radius: 50%;
     aspect-ratio: 1/1;
@@ -15,4 +15,8 @@
 
 .hamburgerIcon:hover{
     background-color: #00000038;
+}
+
+.bordered{
+    border: var(--default-border);
 }

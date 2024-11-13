@@ -5,7 +5,7 @@ import './hamburger.css'
 
 const Hamburger = ({showFull, hamburgerState}) => {
     return(
-        <FontAwesomeIcon icon={hamburgerState ? faX : faBars} className='hamburgerIcon' onClick={() => showFull()} />
+        <FontAwesomeIcon icon={hamburgerState ? faX : faBars} className={`hamburgerIcon ${hamburgerState ? 'bordered' : ""  }`} onClick={() => showFull()} />
     )
 }
 
