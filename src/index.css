@@ -47,6 +47,7 @@ label{
 
 button{
   border-radius: var(--default-border-radius);
+  background-color: transparent;
   padding: .8em .8em;
   border: dashed var(--text-color) 1px;
   transition: var(--default-transition);
@@ -55,8 +56,21 @@ button{
   font-weight: 500;
 }
 
+button:hover{
+  background-color: var(--accent-color);
+  color: #1b7009;
+}
+
 button:disabled{
-  background-color:#9ee62a65;
+  cursor:not-allowed;
+  border: dashed red 1px;
+  color: red;
+  transition: var(--default-transition);
+}
+
+button:disabled:hover{
+  background-color: rgb(255, 119, 104);
+
 }
 
 .pagesTitle{

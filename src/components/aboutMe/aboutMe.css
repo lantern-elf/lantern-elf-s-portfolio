@@ -64,6 +64,11 @@
     width: 90%;
     height: auto;
     border-radius: 50%;
+    transition: var(--default-transition);
+}
+
+.photoImg:hover{
+    cursor: pointer;
 }
 
 .info{

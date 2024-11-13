@@ -1,5 +1,4 @@
-import React from 'react';
-import { useRef } from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import Navbar from '../components/navbar/Navbar';
 import Hero from '../components/hero/Hero';
 import Portfolio from '../components/portfolio/Portfolio';
@@ -10,6 +9,10 @@ const Main = () => {
     const homeRef = useRef(null)
     const portfolioRef = useRef(null)
     const aboutRef = useRef(null)
+
+    // useEffect(() => {
+    //     alert("Welcome")
+    // }, [])
 
     const handleRef = (pagesToScroll) => {
         if (pagesToScroll.current) {
