@@ -9,7 +9,7 @@
     border-radius: 50%;
     aspect-ratio: 1/1;
     transition: var(--default-transition);
-    padding: 0.3rem;
+    padding: 0.3em;
     z-index: 1;
 }
 

@@ -1,6 +1,7 @@
 @import url("/src/index.css");
 
 .headerImg{
+    color: white !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,4 +9,39 @@
     height: 99%;
     border-radius: var(--default-border-radius);
     box-shadow: var(--default-shadow-style);
+
+    display: grid;
+    place-items: center;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: end start;
+}
+
+.heroTitle{
+    text-shadow: 0 0 0px #000000, 0 0 1px #000000;
+    cursor: text;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.heroTitleName{
+    color: white !important;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.heroTitleHeadline{
+    color: white !important;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
