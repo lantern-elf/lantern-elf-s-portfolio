@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root{
   --background-color: #F3EDF5;
@@ -6,7 +8,7 @@
   --accent-color: #9EE62A;
   --text-color: #2c2416;
   --default-shadow-style: 2% 2% 8% 0 rgba(0, 0, 0, 0.25);
-  --font-family: "Montserrat";
+  --font-family: "Host Grotesk", "Inter", "Montserrat";
   --pages-height: 92vh;
   --nav-height: 8vh;
   --default-border: dashed 1px var(--text-color);
@@ -24,6 +26,8 @@
   margin: 0;
   color: var(--text-color);
   font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-style: normal;
   scroll-behavior: smooth;
   /* border: red 0.1px dashed; */
 }
