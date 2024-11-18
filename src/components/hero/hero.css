@@ -18,7 +18,7 @@
     height: 100%;
 
     display: grid;
-    place-items: end start;
+    place-items: center center;
 }
 
 .heroTitle{
@@ -29,8 +29,8 @@
     -ms-user-select: none;
     user-select: none;
 
-    margin-left: 2%;
-    margin-bottom: 2%;
+    /* margin-left: 2%;
+    margin-bottom: 2%; */
 }
 
 .heroTitleName{
