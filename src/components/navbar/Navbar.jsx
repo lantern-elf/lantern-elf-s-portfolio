@@ -10,7 +10,7 @@ const Navbar = ({ homeRef, portfolioRef, aboutRef, socialRef, handleRef}) => {
         {
             name: 'home',
             ref: homeRef,
-            state: false
+            state: true
         },
         {
             name: 'about',
