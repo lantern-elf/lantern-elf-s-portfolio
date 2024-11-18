@@ -9,8 +9,6 @@
     align-items: center;
     justify-content: space-between;
 
-    backdrop-filter: blur(8px);
-
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -113,6 +111,11 @@
 }
 
 .menu li:hover a::before {
+    width: 100%;
+    left: 0;
+}
+
+.menu a.active::before {
     width: 100%;
     left: 0;
 }
