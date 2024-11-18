@@ -3,8 +3,12 @@ import './social.css'
 
 const Social = React.forwardRef((props, ref) => {
     return(
-        <div className="pagesWrapper" ref={ref}>
-            
+        <div className="pagesWrapper socialWrapper" ref={ref}>
+            <div className="socialItem"></div>
+            <div className="socialItem"></div>
+            <div className="socialItem"></div>
+            <div className="socialItem"></div>
+            <div className="socialItem"></div>
         </div>
     )
 })
