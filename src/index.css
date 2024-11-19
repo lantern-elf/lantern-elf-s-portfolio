@@ -8,7 +8,7 @@
   --accent-color: #9EE62A;
   --text-color: #060503;
   --default-shadow-style: 2% 2% 8% 0 rgba(0, 0, 0, 0.25);
-  --font-family: "Host Grotesk", "Inter", "Montserrat";
+  --font-family: "Montserrat", "Host Grotesk", "Inter";
   --pages-height: 92vh;
   --nav-height: 8vh;
   --default-border: dashed 1px var(--text-color);
@@ -78,9 +78,9 @@ button:disabled:hover{
 }
 
 .pagesTitle{
-  height: 10%;
+  height: 8%;
   text-transform: uppercase;
-  font-size:3vmax;
+  font-size:2.5vmax;
   font-weight: 400;
   color: var(--accent-color);
   letter-spacing: .5rem;

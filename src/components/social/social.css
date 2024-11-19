@@ -1,11 +1,14 @@
 @import url("/src/index.css");
 
 .socialWrapper{
-    /* background-color: rgb(168, 98, 234); */
+    width: 100%;
+    /* height: 95%; */
     display: grid;
     gap: 1fr;
+    padding: 1fr;
 }
 
 .socialItem{
-    border: var(--default-border);
+    /* border: var(--default-border); */
+    /* padding: 4em; */
 }
