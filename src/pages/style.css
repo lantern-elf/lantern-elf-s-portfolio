@@ -1,12 +1,15 @@
 @import url("/src/index.css");
 
 nav{
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     height: var(--nav-height);
     z-index: 99;
-    backdrop-filter: blur(32px);
+    /* backdrop-filter: blur(32px); */
+
+    display: grid;
+    place-items: center;
 }
 
 main{

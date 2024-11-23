@@ -1,14 +1,23 @@
 @import url("/src/index.css");
 
-.socialWrapper{
+.socialWrapper {
     width: 100%;
-    /* height: 95%; */
-    display: grid;
-    gap: 1fr;
-    padding: 1fr;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    
 }
 
-.socialItem{
-    /* border: var(--default-border); */
-    /* padding: 4em; */
+.socialItem {
+    width: 50%;
+    height: 100%;
+}
+
+.social {
+    grid-area: social;
+}
+
+.email {
+    grid-area: email;
 }

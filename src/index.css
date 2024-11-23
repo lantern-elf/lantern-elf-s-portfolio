@@ -12,7 +12,7 @@
   --pages-height: 92vh;
   --nav-height: 8vh;
   --default-border: dashed 1px var(--text-color);
-  --default-border-radius: 1em;
+  --default-border-radius: 0.5em;
   --default-transition: .3s ease-in-out;
   font-size: 16px;
 }

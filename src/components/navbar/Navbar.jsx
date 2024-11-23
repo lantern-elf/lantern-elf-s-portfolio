@@ -10,7 +10,7 @@ const Navbar = ({ homeRef, portfolioRef, aboutRef, socialRef }) => {
         { name: 'home', ref: homeRef },
         { name: 'about', ref: aboutRef },
         { name: 'portfolio', ref: portfolioRef },
-        { name: 'social', ref: socialRef },
+        { name: 'Contact', ref: socialRef },
     ];
 
     const showFull = () => {

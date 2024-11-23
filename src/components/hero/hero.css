@@ -13,6 +13,10 @@
     place-items: center;
 }
 
+.heroPagesWrapper{
+    height: 100vh !important;
+}
+
 .hero{
     width: 100%;
     height: 100%;
