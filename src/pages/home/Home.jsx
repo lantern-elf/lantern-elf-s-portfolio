@@ -1,7 +1,12 @@
+import {Helmet} from "react-helmet";
+
 const Home = () => {
     return(
         <>
-        Home
+            <Helmet>
+                <title>{`${document.title} | Home`}</title>
+            </Helmet>
+            
         </>
     )
 }
