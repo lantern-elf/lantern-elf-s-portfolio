@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+nav{
+  width: 100vw;
+  height: 8vh;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

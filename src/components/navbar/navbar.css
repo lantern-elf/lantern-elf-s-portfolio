@@ -1,0 +1,9 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 3em;
+    height: auto;
+}
