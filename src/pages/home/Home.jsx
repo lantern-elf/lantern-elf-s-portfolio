@@ -30,7 +30,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div ref={explore}>
-                    aaa
+                    {/* aaa */}
                 </div>
             </main>
         </>

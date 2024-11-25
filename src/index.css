@@ -53,14 +53,14 @@ main{
   nav{
     background-color: #ffffff60;
   }
-} */
+}
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   * {
     color: #ffffff;
   }
   body{
-    background-color: #000000;
+    background-color: var(--background-color);
   }
   nav{
     background-color: #00000046;
