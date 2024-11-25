@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "./navbar.css"
 
-const Navbar = ({ menuState1, menuState2, menuState3, menuState4 }) => {
+const Navbar = ({ menuState1, menuState2, menuState3, menuState4, dark=true}) => {
     const navigate = useNavigate()
-
     const menuList = [
         {
             name: "Home",
@@ -28,7 +28,7 @@ const Navbar = ({ menuState1, menuState2, menuState3, menuState4 }) => {
     ];
 
     return(
-        <nav className="wrapper">
+        <nav className={`wrapper`}>
             <ul className="logo" onClick={() => navigate('/')}>
                 <img src="./Emblem.png"/>
                 <span>lantern elf</span>

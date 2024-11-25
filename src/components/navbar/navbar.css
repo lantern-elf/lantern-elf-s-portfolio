@@ -7,6 +7,18 @@
     user-select: none;
 }
 
+/* .wrapper.light{
+    color: white !important;
+}
+
+.wrapper.light .menu button{
+    color: white;
+}
+
+.wrapper.light .menu button.active{
+    border-bottom: 0.1px rgb(255, 255, 255) solid;
+} */
+
 .wrapper ul{
     display: flex;
     gap: 1em;
@@ -58,5 +70,5 @@
 }
 
 .menu button.active{
-    border-bottom: 1px white solid;
+    border-bottom: 0.1px rgb(255, 255, 255) solid;
 }

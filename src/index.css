@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
-  --background-color: #2a292c;
+  --background-color: #2b2630;
   --primary-color: #1E5128;
   --secondary: #4E9F3D;
   --accent: rgb(118, 208, 16);
@@ -35,12 +35,17 @@ nav{
   top: 0;
   width: 100vw;
   height: 8vh;
-  z-index: 99;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.075);
 }
 
 main{
   width: 100vw;
   height: 100vh;
+}
+
+button{
+  color: none;
 }
 
 /* @media (prefers-color-scheme: light) {

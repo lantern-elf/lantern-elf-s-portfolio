@@ -25,7 +25,7 @@ const Home = () => {
                             <label className="headline">2D Artist & Programmer</label>
                         </div>
                         <div className="interactBtn">
-                            <button onClick={() => explore.current?.scrollIntoView()}>Explore</button>
+                            {/* <button onClick={() => explore.current?.scrollIntoView()}>Explore</button> */}
                         </div>
                     </div>
                 </div>

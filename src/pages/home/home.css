@@ -18,6 +18,7 @@
 
 .title{
     display: grid;
+    color: white !important;
     text-transform: capitalize;
     margin: auto 4em;
     z-index: 2;
@@ -39,6 +40,7 @@
 }
 
 .title button{
+    position: relative;
     display: grid;
     place-items: center;
     padding: .5em;
