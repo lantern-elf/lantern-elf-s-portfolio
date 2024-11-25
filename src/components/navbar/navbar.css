@@ -1,9 +1,62 @@
 .wrapper{
     display: flex;
     justify-content: space-between;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.wrapper ul{
+    display: flex;
+    gap: 1em;
+    padding: 0 1em;
+}
+
+.logo{
+    place-items: center;
+    gap: .4em !important;
+    cursor: pointer;
 }
 
 .logo img{
-    width: 3em;
-    height: auto;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    /* background-color: ivory;
+    border-radius: 50%;
+    aspect-ratio: 1/1; */
+}
+
+.logo span{
+    height: 100%;
+    font-size: 1rem;
+    display: grid;
+    place-items: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    /* font-weight: 400; */
+}
+
+.menu{
+    place-items: center;
+}
+
+.menu button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    font-size: 1rem;
+    transition: .3s ease-in-out;
+}
+
+.menu button:hover{
+    text-shadow: 0 0 1em var(--accent);
+}
+
+.menu button.active{
+    border-bottom: 1px white solid;
 }

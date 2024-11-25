@@ -4,7 +4,7 @@ const HelloWorld = () => {
     return(
         <>
             <Helmet>
-                <title>{`${document.title} | Hello, World!`}</title>
+                <title>{`Lantern Elf | Hello, World!`}</title>
             </Helmet>
             <h1>Hello, World!</h1>
         </>
