@@ -1,5 +1,7 @@
 .wrapper{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
 
     -webkit-user-select: none;
@@ -31,6 +33,10 @@
     cursor: pointer;
 }
 
+.logo a{
+    display: contents;
+}
+
 .logo img{
     width: 2.5em;
     height: 2.5em;
@@ -47,12 +53,16 @@
     display: grid;
     place-items: center;
     text-transform: capitalize;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     /* font-weight: 400; */
 }
 
 .menu{
     place-items: center;
+}
+
+.menu li{
+    display: contents;
 }
 
 .menu button{
@@ -70,5 +80,6 @@
 }
 
 .menu button.active{
-    border-bottom: 0.1px rgb(255, 255, 255) solid;
+    border-bottom: 0.1px var(--accent) solid;
+    color: var(--accent);
 }

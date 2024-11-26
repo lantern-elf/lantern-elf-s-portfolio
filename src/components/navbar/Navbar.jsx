@@ -29,14 +29,18 @@ const Navbar = ({ menuState1, menuState2, menuState3, menuState4, dark=true}) =>
 
     return(
         <nav className={`wrapper`}>
-            <ul className="logo" onClick={() => navigate('/')}>
-                <img src="./Emblem.png"/>
-                <span>lantern elf</span>
+            <ul className="logo">
+                <a href="/">
+                    <img src="./Emblem.png"/>
+                    <span>lantern elf</span>
+                </a>
             </ul>
             <ul className="menu">
             {
                 menuList.map((item, index) => (
-                    <button key={index} className={item.state ? 'active' : ''} onClick={() => navigate(item.url)}>{item.name}</button>
+                    <li>
+                        <button key={index} className={item.state ? 'active' : ''} onClick={() => navigate(item.url)}>{item.name}</button>
+                    </li>
                 ))
             }
             </ul>

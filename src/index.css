@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root{
-  --background-color: #2b2630;
-  --primary-color: #1E5128;
-  --secondary: #4E9F3D;
-  --accent: rgb(118, 208, 16);
+  --background-color: #1c1820;
+  --primary: #1f291c;
+  --accent: rgb(157, 255, 0);
 }
 
 ::-webkit-scrollbar {
@@ -17,8 +18,7 @@
 *, html, body{
   padding: 0;
   margin: 0;
-  font-family: "Inter";
-  font-weight: 300;
+  font-family: "Open Sans" "Inter";
   color: rgb(255, 255, 255);
   scroll-behavior: smooth;
 }

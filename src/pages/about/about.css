@@ -1,0 +1,56 @@
+.about{
+    padding-top: 8vh;
+    display: grid;
+    grid-template-areas: 'proPict title title'
+                         'proPict bio bio'
+                         'proPict links links';
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 25% 45%;
+    width: 60%;
+    height: 35vh;
+    margin: auto;
+    gap: .5em;
+}
+
+.about div{
+    /* border: white dashed .5px; */
+}
+
+.about-title{
+    grid-area: title;
+    text-transform: capitalize;
+    font-size: 2rem;
+    display: grid;
+    place-items: center left;
+}
+
+.profile-picture{
+    grid-area: proPict;
+    display: grid;
+   
+}
+
+.image-wrapper{
+    display: contents;
+}
+
+.image-wrapper img{
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.about-info{
+    grid-area: bio;
+    font-size: 1rem;
+    text-align: justify;
+    display: grid;
+    place-items: center left;
+}
+
+.about-links{
+    grid-area: links;
+    display: flex;
+    align-items: center;
+}
