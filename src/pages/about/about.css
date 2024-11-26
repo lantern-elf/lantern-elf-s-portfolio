@@ -10,12 +10,14 @@
     grid-template-areas: 'proPict title title'
                          'proPict bio bio'
                          'proPict links links';
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 25% 45%;
     width: 60%;
-    height: 35%;
+    height: 40%;
     margin: auto;
-    gap: .5em;
+    padding: 1em;
+    background-color: var(--primary);
+    border-radius: 1em;
 }
 
 .about div{
@@ -27,24 +29,35 @@
     text-transform: capitalize;
     font-size: 2rem;
     display: grid;
-    place-items: center left;
+    place-items: end left;
 }
 
 .profile-picture{
     grid-area: proPict;
     display: grid;
-   
+    overflow: hidden;
+    place-items: center;
 }
 
 .image-wrapper{
-    display: contents;
+    display: grid;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    width: 85%;
 }
 
 .image-wrapper img{
-    width: 90%;
+    width: 100%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     margin: auto;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image-wrapper>img:hover{
+    transform: scale(1.15);
 }
 
 .about-info{
@@ -58,5 +71,21 @@
 .about-links{
     grid-area: links;
     display: flex;
-    align-items: center;
+    align-items: start center;
+    font-size: 1.2rem;
+    gap: .5em;
+}
+
+.about-links a{
+    border-radius: 50%;
+    /* padding: .2em; */
+    border: white .2px solid;
+    height: 60%;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+}
+
+.about-info b{
+    font-weight: 900;
 }

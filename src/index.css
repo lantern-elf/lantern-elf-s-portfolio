@@ -19,6 +19,7 @@
   padding: 0;
   margin: 0;
   font-family: "Open Sans" "Inter";
+  font-weight: 200;
   color: rgb(255, 255, 255);
   scroll-behavior: smooth;
 }
