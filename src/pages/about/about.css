@@ -1,5 +1,11 @@
-.about{
+.pages-wrapper{
+    width: 100vw;
+    height: 92vh;
     padding-top: 8vh;
+    display: grid;
+}
+
+.about{
     display: grid;
     grid-template-areas: 'proPict title title'
                          'proPict bio bio'
@@ -7,7 +13,7 @@
     grid-template-columns: 25% 75%;
     grid-template-rows: 25% 45%;
     width: 60%;
-    height: 35vh;
+    height: 35%;
     margin: auto;
     gap: .5em;
 }
