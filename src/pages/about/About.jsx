@@ -36,11 +36,11 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about-links">
-                        <a href="https://twitter.com/lantern_elf" target="black"><FontAwesomeIcon icon={faTwitter} className="twitter-icon"/></a>
-                        <a href="https://www.instagram.com/lantern_elf" target="black"><FontAwesomeIcon icon={faInstagram} /></a>
-                        <a href="https://bsky.app/profile/lanternelf.bsky.social" target="black"><FontAwesomeIcon icon={faBluesky} /></a>
-                        <a href="https://www.facebook.com/lanternelf" target="black"><FontAwesomeIcon icon={faFacebook} /></a>
-                        <a href="https://github.com/lantern-elf" target="black"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a className="twitter-icon" href="https://twitter.com/lantern_elf" target="black"><FontAwesomeIcon icon={faTwitter} /></a>
+                        <a className="instagram-icon" href="https://www.instagram.com/lantern_elf" target="black"><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a className="bluesky-icon" href="https://bsky.app/profile/lanternelf.bsky.social" target="black"><FontAwesomeIcon icon={faBluesky} /></a>
+                        <a className="facebook-icon" href="https://www.facebook.com/lanternelf" target="black"><FontAwesomeIcon icon={faFacebook} /></a>
+                        <a className="github-icon" href="https://github.com/lantern-elf" target="black"><FontAwesomeIcon icon={faGithub} /></a>
                     </div>
                 </div>
             </div>

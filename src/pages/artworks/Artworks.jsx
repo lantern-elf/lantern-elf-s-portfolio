@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet";
 import Navbar from "../../components/navbar/Navbar";
-import './arts.css'
+import './artworks.css'
 
-const Arts = () => {
+const Artworks = () => {
     return(
         <>
             <Helmet>
@@ -18,4 +18,4 @@ const Arts = () => {
     )
 }
 
-export default Arts
+export default Artworks

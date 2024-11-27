@@ -5,8 +5,11 @@
 
 :root{
   --background-color: #1c1820;
-  --primary: #1f291c;
-  --accent: rgb(157, 255, 0);
+  --primary: #253726;
+  --accent: rgb(180, 240, 59);
+  --default-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.231);
+
+  color: white;
 }
 
 ::-webkit-scrollbar {
@@ -20,7 +23,6 @@
   margin: 0;
   font-family: "Open Sans" "Inter";
   font-weight: 200;
-  color: rgb(255, 255, 255);
   scroll-behavior: smooth;
 }
 
@@ -49,9 +51,14 @@ button{
   color: none;
 }
 
+a, button{
+  text-decoration: none;
+  color: white;
+}
+
 /* @media (prefers-color-scheme: light) {
-  * {
-    color: #000000;
+  :root{
+    color: rgb(0, 0, 0);
   }
   body{
     background-color: #ffffff;
@@ -59,16 +66,22 @@ button{
   nav{
     background-color: #ffffff60;
   }
+  a, button{
+    color: rgb(0, 0, 0);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-  * {
-    color: #ffffff;
+  :root{
+    color: white;
   }
   body{
     background-color: var(--background-color);
   }
   nav{
     background-color: #00000046;
+  }
+  a, button{
+    color: white;
   }
 } */
