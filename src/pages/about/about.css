@@ -11,8 +11,8 @@
                          'proPict bio bio'
                          'proPict links links';
     grid-template-columns: 30% 70%;
-    grid-template-rows: 25% 45%;
-    width: 60%;
+    grid-template-rows: 25% 50%;
+    width: 65%;
     height: 40%;
     margin: auto;
     padding: 1em;
@@ -26,17 +26,23 @@
 
 .about-title{
     grid-area: title;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 2rem;
     display: grid;
     place-items: end left;
+    color: var(--accent);
+
 }
 
 .profile-picture{
+    position: relative;
     grid-area: proPict;
     display: grid;
-    overflow: hidden;
     place-items: center;
+}
+
+.profile-picture a{
+    display: contents;
 }
 
 .image-wrapper{
@@ -45,18 +51,36 @@
     overflow: hidden;
     aspect-ratio: 1/1;
     width: 85%;
+    place-items: center;
+}
+
+.image-wrapper::before{
+    content: "";
+    width: 90%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border: dashed white 1px;
+    border-radius: 50%;
+    z-index: 9;
+    animation: rotate 20s linear infinite;
+} @keyframes rotate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
 }
 
 .image-wrapper img{
     width: 100%;
-    aspect-ratio: 1/1;
     border-radius: 50%;
     margin: auto;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.image-wrapper>img:hover{
+.image-wrapper:hover img{
     transform: scale(1.15);
 }
 
@@ -71,19 +95,27 @@
 .about-links{
     grid-area: links;
     display: flex;
-    align-items: start center;
+    place-items: center;
     font-size: 1.2rem;
     gap: .5em;
 }
 
 .about-links a{
     border-radius: 50%;
-    /* padding: .2em; */
     border: white .2px solid;
     height: 60%;
     aspect-ratio: 1/1;
     display: grid;
     place-items: center;
+    transition: .3s ease-in-out;
+}
+
+.twitter-icon {
+    color: #1DA1F2;
+}
+
+.about-links a:hover{
+    transform: translateY(-.3em);
 }
 
 .about-info b{

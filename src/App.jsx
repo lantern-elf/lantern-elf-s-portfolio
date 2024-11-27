@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import '@fortawesome/fontawesome-svg-core/styles.css'; 
 import Home from './pages/home/Home'
 import Arts from './pages/arts/Arts'
 import About from './pages/about/About'
@@ -12,7 +13,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
-        <Route path='/arts' element={<Arts />} />
+        <Route path='/artworks' element={<Arts />} />
         <Route path='/codes' element={<Codes />} />
         <Route path='/about' element={<About />} />
         <Route path='/helloworld' element={<HelloWorld />} />

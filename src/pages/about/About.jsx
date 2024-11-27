@@ -22,9 +22,11 @@ const About = () => {
                         about me
                     </div>
                     <div className="profile-picture">
-                        <div className="image-wrapper">
-                            <img src="./images/profile_picture.png" alt="" />
-                        </div>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">
+                            <div className="image-wrapper">
+                                <img src="./images/profile_picture.png" alt="" />
+                            </div>
+                        </a>
                     </div>
                     <div className="about-info">
                         <p>
@@ -34,11 +36,11 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about-links">
-                        <a href="" target="black"><FontAwesomeIcon icon={faTwitter} /></a>
-                        <a href="" target="black"><FontAwesomeIcon icon={faInstagram} /></a>
-                        <a href="" target="black"><FontAwesomeIcon icon={faBluesky} /></a>
-                        <a href="" target="black"><FontAwesomeIcon icon={faFacebook} /></a>
-                        <a href="" target="black"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://twitter.com/lantern_elf" target="black"><FontAwesomeIcon icon={faTwitter} className="twitter-icon"/></a>
+                        <a href="https://www.instagram.com/lantern_elf" target="black"><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href="https://bsky.app/profile/lanternelf.bsky.social" target="black"><FontAwesomeIcon icon={faBluesky} /></a>
+                        <a href="https://www.facebook.com/lanternelf" target="black"><FontAwesomeIcon icon={faFacebook} /></a>
+                        <a href="https://github.com/lantern-elf" target="black"><FontAwesomeIcon icon={faGithub} /></a>
                     </div>
                 </div>
             </div>

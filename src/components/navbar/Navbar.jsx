@@ -11,8 +11,8 @@ const Navbar = ({ menuState1, menuState2, menuState3, menuState4, dark=true}) =>
             state: menuState1
         },
         {
-            name: "Arts",
-            url: "/arts",
+            name: "Artworks",
+            url: "/artworks",
             state: menuState2
         },
         {
