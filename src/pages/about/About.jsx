@@ -31,7 +31,7 @@ const About = () => {
                     <div className="about-info">
                         <p>
                             Greetings. I am <b>Lantern</b>. I am a <i>2D Artist</i> and a <i>programmer</i>, based on Indonesia.
-                            I specialized in <b>art</b> and <b>coding</b>. My expertise includes illustrations, concept art, 
+                            I specialize in <b>art</b> and <b>coding</b>. My expertise includes illustrations, concept art, 
                             front-end website development, and game development.
                         </p>
                     </div>

@@ -15,14 +15,14 @@
     width: 65%;
     height: 40%;
     margin: auto;
-    padding: 1em;
+    padding: 2em;
     background-color: var(--primary);
     border-radius: 1em;
 }
 
-.about div{
-    /* border: white dashed .5px; */
-}
+/* .about div{
+    border: white dashed .5px;
+} */
 
 .about-title{
     grid-area: title;
@@ -81,7 +81,7 @@
 }
 
 .image-wrapper:hover img{
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 .about-info{
