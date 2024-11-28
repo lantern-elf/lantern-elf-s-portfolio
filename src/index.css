@@ -18,7 +18,7 @@
   width: 0px;
 }
 
-*, html, body{
+*, html{
   padding: 0;
   margin: 0;
   font-family: "Open Sans" "Inter";
@@ -39,7 +39,7 @@ nav{
   width: 100vw;
   height: 8vh;
   z-index: 9;
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: rgba(0, 0, 0, 0.324);
 }
 
 main{

@@ -13,11 +13,11 @@
     grid-template-columns: 30% 70%;
     grid-template-rows: 25% 50%;
     width: 65%;
-    height: 40%;
+    height: 45%;
     margin: auto;
-    padding: 2em;
+    padding: 2%;
     background-color: var(--primary);
-    border-radius: 1em;
+    border-radius: .5em;
     box-shadow: var(--default-box-shadow);
 }
 

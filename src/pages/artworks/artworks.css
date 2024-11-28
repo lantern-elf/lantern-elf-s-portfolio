@@ -1,0 +1,32 @@
+.gallery-wrapper {
+    padding-top: 8vh;
+    padding-inline: 2vw;
+}
+
+.my-masonry-grid {
+    display: -webkit-box; 
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    grid-gap: 1%;
+}
+
+.pin {
+    border-radius: .5em;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1vw;
+    transition: transform 0.2s;
+}
+
+.pin img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.my-masonry-grid_column {
+    background-clip: padding-box;
+}

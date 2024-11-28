@@ -1,0 +1,5 @@
+.container{
+    background-color: var(--primary);
+    width: 10em;
+    aspect-ratio: 3/4;
+}

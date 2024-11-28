@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "url": "./images/artworks/image_1.jpg"
+    },
+    {
+        "id": 2,
+        "url": "./images/artworks/image_2.png"
+    },
+    {
+        "id": 3,
+        "url": "./images/artworks/image_3.png"
+    },
+    {
+        "id": 4,
+        "url": "./images/artworks/image_4.png"
+    },
+    {
+        "id": 5,
+        "url": "./images/artworks/image_5.png"
+    },
+    {
+        "id": 6,
+        "url": "./images/artworks/image_6.png"
+    }
+]
