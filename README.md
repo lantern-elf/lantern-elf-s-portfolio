@@ -1,3 +1,9 @@
+# Lantern Elf's Portfolio
+
+This project builded for my portfolio website. This project is using React JS framework library.  
+
+#
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
