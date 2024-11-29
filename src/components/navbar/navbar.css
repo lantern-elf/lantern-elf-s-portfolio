@@ -67,11 +67,52 @@
         color: var(--accent);
     }
 
-    .menu-item{
-        /* display: none; */
-    }
-
     .hamburger-icon{
         display: none;
     }    
+}
+
+.hamburger{
+    width: 100vw;
+    position: fixed;
+    top: 8vh;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.324); 
+    list-style-type: none;
+
+    button{
+        position: relative;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0.5em;
+        font-size: .9rem;
+        transition: .3s ease-in-out;
+    }
+    ul{
+        display: flex;
+        gap: 1em;
+        padding: 0 1em;
+    }
+    ul li{
+        display: contents;
+    }
+}
+
+.hamburger.open-burger{
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .menu-item {
+        display: none !important;
+    }
+    .hamburger-icon{
+        display: block !important;
+    }
+}
+
+@media (max-width: 768px) {
+    
 }
