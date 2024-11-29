@@ -1,9 +1,11 @@
-import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Hamburger from 'hamburger-react'
 import "./navbar.css"
 
 const Navbar = ({ menuState1, menuState2, menuState3, menuState4, dark=true}) => {
     const navigate = useNavigate()
+    const [isOpen, setOpen] = useState(false)
     const menuList = [
         {
             name: "Home",
@@ -38,11 +40,14 @@ const Navbar = ({ menuState1, menuState2, menuState3, menuState4, dark=true}) =>
             <ul className="menu">
             {
                 menuList.map((item, index) => (
-                    <li>
+                    <li className="menu-item">
                         <button key={index} className={item.state ? 'active' : ''} onClick={() => navigate(item.url)}>{item.name}</button>
                     </li>
                 ))
             }
+                <li className='hamburger-icon'>
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
+                </li>
             </ul>
         </nav>
     )

@@ -8,79 +8,70 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
 
-/* .wrapper.light{
-    color: white !important;
-}
+    ul{
+        display: flex;
+        gap: 1em;
+        padding: 0 1em;
+    }
+    ul li{
+        display: contents;
+    }
 
-.wrapper.light .menu button{
-    color: white;
-}
-
-.wrapper.light .menu button.active{
-    border-bottom: 0.1px rgb(255, 255, 255) solid;
-} */
-
-.wrapper ul{
-    display: flex;
-    gap: 1em;
-    padding: 0 1em;
 }
 
 .logo{
     place-items: center;
     gap: .4em !important;
     cursor: pointer;
-}
 
-.logo a{
-    display: contents;
-}
+    a{
+        display: contents;
+    }
 
-.logo img{
-    width: 2.5em;
-    height: 2.5em;
-    display: flex;
-    flex-direction: row;
-    /* background-color: ivory;
-    border-radius: 50%;
-    aspect-ratio: 1/1; */
-}
+    img{
+        width: 2.5em;
+        height: 2.5em;
+        display: flex;
+        flex-direction: row;
+    }
 
-.logo span{
-    height: 100%;
-    font-size: 1rem;
-    display: grid;
-    place-items: center;
-    text-transform: capitalize;
-    letter-spacing: .5px;
-    /* font-weight: 400; */
+    span{
+        height: 100%;
+        font-size: 1rem;
+        display: grid;
+        place-items: center;
+        text-transform: capitalize;
+        letter-spacing: .5px;
+        /* font-weight: 400; */
+    }
 }
 
 .menu{
     place-items: center;
-}
 
-.wrapper ul li{
-    display: contents;
-}
+    button{
+        position: relative;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0.5em;
+        font-size: .9rem;
+        transition: .3s ease-in-out;
+    }
+    button:hover{
+        text-shadow: 0 0 1em var(--accent);
+    }
+    button.active{
+        border-bottom: 0.1px var(--accent) solid;
+        color: var(--accent);
+    }
 
-.menu button{
-    position: relative;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0.5em;
-    font-size: .9rem;
-    transition: .3s ease-in-out;
-}
+    .menu-item{
+        /* display: none; */
+    }
 
-.menu button:hover{
-    text-shadow: 0 0 1em var(--accent);
-}
-
-.menu button.active{
-    border-bottom: 0.1px var(--accent) solid;
-    color: var(--accent);
+    .hamburger-icon{
+        display: none;
+    }    
 }
