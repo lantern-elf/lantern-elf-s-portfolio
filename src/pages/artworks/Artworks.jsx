@@ -27,13 +27,13 @@ const Artworks = () => {
                 <Masonry
                     breakpointCols={breakpointColumnsObj}
                     className="my-masonry-grid"
-                    columnClassName="my-masonry-grid_collumn"
+                    columnClassName="my-masonry-grid_column"
                 >
                     {
                         artworkData.map((image) => (
                             <div key={image.id} className="pin">
                                 <img className="artwork-img" src={image.url} />
-                                {console.log(image.id)}
+                                <span>{image.caption}</span>
                             </div>
                         ))
                     }

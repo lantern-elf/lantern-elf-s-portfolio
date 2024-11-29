@@ -62,7 +62,7 @@
     place-items: center;
 }
 
-.menu li{
+.wrapper ul li{
     display: contents;
 }
 

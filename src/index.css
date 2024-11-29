@@ -5,9 +5,9 @@
 
 :root{
   --background-color: #1c1820;
-  --primary: #253726;
+  --primary: #334434;
   --accent: rgb(180, 240, 59);
-  --default-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.231);
+  --default-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.412);
 
   color: white;
 }
@@ -16,6 +16,7 @@
   position: fixed;
   top: 0;
   width: 0px;
+  background-color: #334434;
 }
 
 *, html{
@@ -39,7 +40,7 @@ nav{
   width: 100vw;
   height: 8vh;
   z-index: 9;
-  background-color: rgba(0, 0, 0, 0.324);
+  background-color: rgba(0, 0, 0, 0.234);
 }
 
 main{

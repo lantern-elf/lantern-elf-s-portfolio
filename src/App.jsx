@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import '@fortawesome/fontawesome-svg-core/styles.css'; 
 import Home from './pages/home/Home'
 import Artworks from './pages/artworks/Artworks'
 import About from './pages/about/About'
@@ -16,7 +15,7 @@ const App = () => {
     setLoading(true)
     setTimeout(()=>{
       setLoading(false)
-    }, 4000)
+    }, 2000)
   }, [])
 
   if(loading){

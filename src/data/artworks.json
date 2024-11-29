@@ -1,26 +1,98 @@
 [
     {
-        "id": 1,
-        "url": "./images/artworks/image_1.jpg"
-    },
-    {
         "id": 2,
-        "url": "./images/artworks/image_2.png"
+        "url": "../images/artworks/blue_hour.png",
+        "caption": "Blue Hour"
     },
     {
-        "id": 3,
-        "url": "./images/artworks/image_3.png"
+        "id": 7,
+        "url": "../images/artworks/Hyrule warior chibi.png",
+        "caption": "Chibi Hyrule Warrior Link"
     },
     {
-        "id": 4,
-        "url": "./images/artworks/image_4.png"
+      "id": 4,
+      "url": "../images/artworks/Chibi Link - Totk 1st Anniversary (framed).png",
+      "caption": "Chibi Link - Totk 1st Anniversary"
     },
     {
-        "id": 5,
-        "url": "./images/artworks/image_5.png"
+      "id": 5,
+      "url": "../images/artworks/Chibi time.png",
+      "caption": "Chibi Link (Ocarina of Time)"
+    },
+    {
+        "id": 14,
+        "url": "../images/artworks/strBoard 02.jpg",
+        "caption": ""
+    },
+    {
+        "id": 10,
+        "url": "../images/artworks/Lantern reference sheet.png",
+        "caption": "Lantern - Concept Art"
+    },
+    {
+        "id": 8,
+        "url": "../images/artworks/Kolin concept art.png",
+        "caption": "Kolin - Concept Art"
     },
     {
         "id": 6,
-        "url": "./images/artworks/image_6.png"
+        "url": "../images/artworks/Echoes of Wisdom.png",
+        "caption": "Echoes of Wisdom"
+    },
+    {
+        "id": 19,
+        "url": "../images/artworks/Zelda unused design from master works.png",
+        "caption": "Zelda's Unused Design from Master Works"
+    },
+    {
+        "id": 12,
+        "url": "../images/artworks/new face.png",
+        "caption": "Reflective Gaze"
+    },
+    {
+        "id": 13,
+        "url": "../images/artworks/red-link.jpg",
+        "caption": "Red Link from Four Sword"
+    },
+    {
+        "id": 11,
+        "url": "../images/artworks/lying in bed.png",
+        "caption": "Lying in Bed"
+    },
+    {
+      "id": 1,
+      "url": "../images/artworks/A_&_20.png",
+      "caption": "A & 20"
+    },
+    {
+      "id": 3,
+      "url": "../images/artworks/Campfire.png",
+      "caption": "Campfire"
+    },
+    {
+      "id": 9,
+      "url": "./images/artworks/Kolin's House.png",
+      "caption": "Kolin's House"
+    },
+    {
+      "id": 15,
+      "url": "../images/artworks/swamp.png",
+      "caption": "Swamp"
+    },
+    {
+      "id": 16,
+      "url": "../images/artworks/toon link doodle.png",
+      "caption": "Toon Link Sketch"
+    },
+    {
+      "id": 17,
+      "url": "../images/artworks/Victoria lament.png",
+      "caption": "Victoria Lament"
+    },
+    {
+      "id": 18,
+      "url": "../images/artworks/Victoria test lighting.png",
+      "caption": ""
     }
-]
+  ]
+  
