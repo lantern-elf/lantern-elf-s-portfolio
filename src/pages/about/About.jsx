@@ -16,7 +16,7 @@ const About = () => {
                 menuState3={false}
                 menuState4={true}
             />
-            <div className="pages-wrapper"> 
+            <main className="pages-wrapper"> 
                 <div className="about">
                     <div className="about-title">
                         about me
@@ -43,7 +43,7 @@ const About = () => {
                         <a className="github-icon" href="https://github.com/lantern-elf" target="black"><FontAwesomeIcon icon={faGithub} /></a>
                     </div>
                 </div>
-            </div>
+            </main>
         </>
     )
 }

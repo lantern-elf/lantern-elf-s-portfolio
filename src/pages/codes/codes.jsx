@@ -1,7 +1,8 @@
-import { Helmet } from "react-helmet";
-import Navbar from "../../components/navbar/Navbar";
+import { Helmet } from "react-helmet"
+import Navbar from "../../components/navbar/Navbar"
 import './codes.css'
-import ContentCard from "../../components/content_card/ContentCard";
+import ContentCard from "../../components/content_card/ContentCard"
+import codesData from "../../data/code.json"
 
 const Codes = () => {
     return(
@@ -15,9 +16,9 @@ const Codes = () => {
                 menuState3={true}
                 menuState4={false}
             />
-            <div className="codeWrapper">
-                <ContentCard />
-            </div>
+            <main className="codeWrapper">
+                <div>Not Available Yet!</div>
+            </main>
         </>
     )
 }

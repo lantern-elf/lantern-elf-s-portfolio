@@ -7,8 +7,8 @@ import artworkData from "../../data/artworks.json";
 const Artworks = () => {
     const breakpointColumnsObj = {
         default: 4,
-        1100: 3,
-        700: 3,
+        1100: 2,
+        700: 2,
         500: 2
     }
 
@@ -23,7 +23,7 @@ const Artworks = () => {
                 menuState3={false}
                 menuState4={false}
             />
-            <div className="gallery-wrapper">
+            <main className="gallery-wrapper">
                 <Masonry
                     breakpointCols={breakpointColumnsObj}
                     className="my-masonry-grid"
@@ -38,7 +38,7 @@ const Artworks = () => {
                         ))
                     }
                 </Masonry>
-            </div>
+            </main>
         </>
     )
 }

@@ -17,11 +17,11 @@ const Navbar = ({ menuState1, menuState2, menuState3, menuState4, dark=true}) =>
             url: "/artworks",
             state: menuState2
         },
-        {
-            name: "Codes",
-            url: "/codes",
-            state: menuState3
-        },
+        // {
+        //     name: "Codes",
+        //     url: "/codes",
+        //     state: menuState3
+        // },
         {
             name: "About",
             url: "/about",
