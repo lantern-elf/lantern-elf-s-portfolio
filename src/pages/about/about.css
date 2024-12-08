@@ -15,7 +15,7 @@
     width: 65%;
     height: 45%;
     margin: auto;
-    padding: 2%;
+    padding: 1em;
     background-color: var(--primary);
     border-radius: .5em;
     box-shadow: var(--default-box-shadow);
@@ -88,7 +88,6 @@
 .about-info{
     grid-area: bio;
     font-size: 1rem;
-    text-align: justify;
     display: grid;
     place-items: center left;
 }
@@ -104,7 +103,7 @@
 .about-links a{
     border-radius: 50%;
     border: white .2px solid;
-    height: 60%;
+    height: 2em;
     aspect-ratio: 1/1;
     display: grid;
     place-items: center;
@@ -143,4 +142,33 @@
 
 .about-info b{
     font-weight: 900;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .about{
+        grid-template-areas: 'proPict'
+                             'title '
+                             'bio'
+                             'links' ;
+        grid-template-rows: 35% 10% 35% 10%;
+        grid-template-columns: auto;
+        height: 90%;
+    }    
+    .image-wrapper{
+        width: 50%;
+    }
+    .image-wrapper::before{
+        width: 55%;
+    }
+    .about-title{
+        place-items: center;
+    }
+    .about-info{
+        place-items: center;
+        text-align: center;
+    }
+    .about-links{
+        justify-content: center;
+    }
 }
