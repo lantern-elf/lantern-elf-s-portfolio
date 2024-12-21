@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faInstagram, faFacebook, faBluesky, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faInstagram, faFacebook, faBluesky, faGithub, faArtstation } from '@fortawesome/free-brands-svg-icons'
 import Navbar from "../../components/navbar/Navbar";
 import './about.css'
 
@@ -41,6 +41,7 @@ const About = () => {
                         <a className="bluesky-icon" href="https://bsky.app/profile/lanternelf.bsky.social" target="black"><FontAwesomeIcon icon={faBluesky} /></a>
                         <a className="facebook-icon" href="https://www.facebook.com/lanternelf" target="black"><FontAwesomeIcon icon={faFacebook} /></a>
                         <a className="github-icon" href="https://github.com/lantern-elf" target="black"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a className="artstation-icon" href="https://github.com/lantern-elf" target="black"><FontAwesomeIcon icon={faArtstation} /></a>
                     </div>
                 </div>
             </main>

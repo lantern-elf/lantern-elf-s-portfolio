@@ -87,7 +87,7 @@
 
 .about-info{
     grid-area: bio;
-    font-size: 1rem;
+    font-size: .9rem;
     display: grid;
     place-items: center left;
 }
@@ -138,6 +138,10 @@
     border-color: #181717;
     color: #181717;
 
+}
+.artstation-icon:hover{
+    border-color: #3877ff;
+    color: #3877ff;
 }
 
 .about-info b{

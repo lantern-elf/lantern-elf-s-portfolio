@@ -1,5 +1,5 @@
 .gallery-wrapper {
-    padding-top: 10vh;
+    padding-top: 9vh;
     padding-inline: 2vw;
 }
 
@@ -11,7 +11,7 @@
     grid-gap: 1%;
 }
 
-.pin {
+/* .pin {
     display: flex;
     flex-direction: column;
     gap: .2em;
@@ -27,15 +27,29 @@
         object-fit: cover;
         transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
-    & img:hover {
-        transform: translateY(-.4em);
-    }
 
     span{
         font-size: .8rem;
     }
-}
+} */
 
+.pin{
+    columns: 300px;
+    margin-bottom: 1vw;
+    & img {
+        border-radius: .5em;
+        box-shadow: var(--dafault-box-shadow);
+        background-color: var(--primary);
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    span{
+        font-size: .8rem;
+    }
+
+}
 
 
 .my-masonry-grid_column {
